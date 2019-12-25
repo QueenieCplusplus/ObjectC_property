@@ -16,3 +16,50 @@
            // 合成的意思
            
     
+實作範例
+
+QQQ.h
+
+           #import <Foundation/Foundation.h>
+           
+           @interface QQQ: NSObject
+           {
+           
+               int p;
+           
+           }
+           
+           @property int p;
+           
+           -(void)printP;
+
+QQQ.m
+具體化標頭檔的介面
+實現其屬性
+實作其方法
+
+          #import <QQQ.h>
+          @implementation
+          
+          @synthesize p;
+          
+          -(void)printP
+          {
+             NSlog(@"%i",p);
+          }
+          
+          @end
+
+main.m
+注入標頭檔
+此標頭檔已經被具體化了
+
+         #import <Foundation/Foundation.h>
+         #import "QQQ.h"
+         
+         int main(int argc, const * argv[])
+         {
+           
+         
+         
+         }
