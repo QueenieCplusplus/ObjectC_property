@@ -60,6 +60,10 @@ main.m
          int main(int argc, const * argv[])
          {
            
-         
+           QQQ *p=[[QQQ alloc]init];
+           [p setP: 1]; //setter 
+           [p printP];
+                      
+              return 0;     
          
          }
