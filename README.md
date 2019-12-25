@@ -72,3 +72,13 @@ main.m
               return 0;     
          
          }
+
+# 帶參屬性
+
+getter 為存取器; setter 為設定器，在別的語言這稱為存取子，也稱為『記憶體函數』，實際上就是提供外界了取得執行個體變數和設定執行個體變數的方法，所有等級的執行個體變數都能被存取到。
+
+聲明方式
+
+         -(void) setVarName: paramType paramConstName;
+         // 傳回值為 void ，這和 js 的表現方式相反
+
